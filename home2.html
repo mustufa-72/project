@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/assets/dcode.css">
+  <link href="home2.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  #btnScrollToTop
+  {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #19B3D3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #btnScrollToTop:active{
+    background: #292829;
+  }
+</style>
+
+    </head>
+<body>
+
+            <div class="welcome">
+
+   <h2>If you are not willing to learn,no one can help you.</h2>
+        <h3><p>If you are determined to learn,no one can stop you.</p></h3>
+
+    </div>
+
+      <div class="menu-bar">
+<ul>
+    <li class="active"><a href="#"><i class="fa fa-home"></i><a href="loading.html">Home</a></a></li>
+   <li><a href="#"><i class="fa fa-steam"></i><a href="team.html">Teams</a></a></li>
+   <li><a href="#"><i class="fa fa-phone"></i><a href="conus.html">Contact Us</a></a></li>
+   <li><a href="#"><i class="fa fa-sign-in"></i>Login</a>
+<div class="menu1">
+  <ul>
+<li><a href="#"><i class="fa fa-users"></i><a href="admin.html">Admin</a></a></li>
+<li class="hover-me"><a href="#"><i class="fa fa-users"></i>Facutly<i class="fa fa-angle-right"></i></a>
+<div class="sub-menu1">
+  <ul>
+     <li><a href="#"><i class="fa fa-sign-in"></i><a href="faculty.html">Facutly Login</a></li>
+     <li><a href="#"><i class="fa fa-users"></i><a href="reg.html">New Account</a></li>
+  </ul>
+</div>
+</li>
+<li class="hover-me"><a href="#"><i class="fa fa-users"></i>Student<i class="fa fa-angle-right"></i></a>
+<div class="sub-menu1">
+  <ul>
+      <li><a href="#"><i class="fa fa-sign-in"></i><a href="student.html">Student Login</a></li>
+      <li><a href="#"><i class="fa fa-users"></i><a href="reg.html">New Account</a></li>
+  </ul>
+</div>
+</li>
+  </ul>
+</div>
+   </li>
+
+</ul>
+
+   </div>
+
+
+   <button id="btnScrollToTop">
+             <i class="material-icons">arrow_upward</i>
+   </button>
+
+ <script>
+  const btnScrollToTop =document.querySelector("#btnScrollToTop");
+
+  btnScrollToTop.addEventListener("click", function(){
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  });
+ </script>
+
+
+    <div id="particles-js"></div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+    </body>
+</html>

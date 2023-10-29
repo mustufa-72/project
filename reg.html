@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="reg.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/assets/dcode.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<h2>Create Account</h2>
+	</div>
+
+	<form id="form" class="form" action="reg.cgi" method="POST">
+		<div class="form-control">
+			<label for="username">Username</label>
+			<input type="text" placeholder="Full Name" name="username">
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="Email" name="email">
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Password" name="password">
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control">
+			<label for="username">Confirm Password</label>
+			<input type="password" placeholder="Confirm Password" name="password2">
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+    		<button type="submit">Submit</button>
+
+	</form>
+</div>
+</body>
+</html>

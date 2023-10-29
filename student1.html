@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="student1.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/dcode.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      #btnScrollToTop
+      {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #19B3D3;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: #ffffff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      #btnScrollToTop:active{
+        background: #292829;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="welcome">
+
+<h2>If you are not willing to learn,no one can help you.</h2>
+<h3><p>If you are determined to learn,no one can stop you.</p></h3>
+
+</div>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fa fa-bars" id="btn"></i>
+      <i class="fa fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>My Profile</header>
+
+      <a href="#" class="active">
+        <i class="fa fa-home"></i>
+        <span>Home</span>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-user"></i>
+        <span>Student Profile</span>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-file-text"></i>
+        <span>Attendence</span>
+      </a>
+
+      <a href="#">
+         <i class="fa fa-file-text"></i>
+        <span>Defaulter List</span>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-sign-out"></i>
+        <span>Logout</span>
+      </a>
+
+    </div>
+
+
+    <button id="btnScrollToTop">
+              <i class="material-icons">arrow_upward</i>
+    </button>
+
+  <script>
+   const btnScrollToTop =document.querySelector("#btnScrollToTop");
+
+   btnScrollToTop.addEventListener("click", function(){
+     window.scrollTo({
+       top: 0,
+       left: 0,
+       behavior: "smooth"
+     });
+   });
+  </script>
+
+
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+
+</body>
+</html>

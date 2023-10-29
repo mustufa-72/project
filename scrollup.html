@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Scroll To Top Button</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/assets/dcode.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    #btnScrollToTop
+    {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #e62739;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    #btnScrollToTop:active{
+      background: #cc2333;
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Scroll To Top Button</h1>
+    <button id="btnScrollToTop">
+              <i class="material-icons">arrow_upward</i>
+    </button>
+
+
+
+<div>
+
+</div>
+
+<script>
+   const btnScrollToTop =document.querySelector("#btnScrollToTop");
+
+   btnScrollToTop.addEventListener("click", function(){
+     window.scrollTo({
+       top: 0,
+       left: 0,
+       behavior: "smooth"
+     });
+   });
+</script>
+
+</body>
